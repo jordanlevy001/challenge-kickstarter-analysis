@@ -96,14 +96,14 @@
 <img width="898" alt="Selecting Data" src="https://user-images.githubusercontent.com/88804543/129995354-ef367659-56fd-4865-b597-a9cbea60f164.png">
 
 #### The graph that is automatically generated has too much information and we need to remove the excess.This can be donee by selecting the chart, then choosing "Select Data" from the "Chart Design" ribbon at the top. Under 'Legend entries', we can remove the top 4 items, by pressing the minus sign in the bottom left corner below the box. This will leave us with the information we DO want:
-#### * "Percentage Successful"
-#### * "Percentage Failed"
-#### * "Percentage Canceled"
+#### *"Percentage Successful"
+#### *"Percentage Failed"
+#### *"Percentage Canceled"
 #### In the box that says "Chart Title", the text was edited to "Outcomes Based on Goals". The finalized chart looks like this:
-<img width="892" alt="Table_Outcomes Based on Goals" src="https://user-images.githubusercontent.com/88804543/129995606-420f0128-ceef-4993-a3b9-6ae027874377.png">
+![Outcomes_vs_Goals](https://user-images.githubusercontent.com/88804543/130123811-b262797c-98bc-4346-b871-5d8fe1883d61.png)
 
 ### Challenges
-#### No challenges occurred while completing deliverable 1 and 2, the outcomes based on launch date and the outcomes based on goals charts. The first challenge occurred when writing the analysis report in the README.md file in GitHub, I had difficulty with the headers. Some headers would display normally but then others would not. This trouble occurred specifically for H4 headers, meaning the ones requiring 4 hashes. Some of the lines with 4 hashes would display normally and others would not. I looked up Markdown syntax to ensure I was using the hashes correctly. I also googled if anyone also had this issue. I also went through the entire README.md file and deleted the H4 headers and re-entered them. I also tried refreshing the page.
+#### No challenges occurred while completing deliverable 1 and 2, the outcomes based on launch date and the outcomes based on goals charts. The first challenge occurred when writing the analysis report in the README.md file in GitHub, I had difficulty with the headers. Some headers would display normally but then others would not. This trouble occurred specifically for H4 headers, meaning the ones requiring 4 hashes. Some of the lines with 4 hashes would display normally and others would not. I looked up Markdown syntax to ensure I was using the hashes correctly. I also googled if anyone also had this same issue. I also went through the entire README.md file and deleted the H4 headers and re-entered them. Then I tried adding space between lines with H4 headers that came after an image. This seemed to work. So I went through thee README.md file and added space where it was needed between images and H4 headers.
 
 ## Results
 
