@@ -14,7 +14,7 @@
 
 <img width="496" alt="Excel Year Function" src="https://user-images.githubusercontent.com/88804543/129990659-8b36739a-0d55-4b43-b56d-6890f2ace3ba.png">
 
-#### The example photo above shows how the YEAR() function can pull the year from another cell.
+#### The example photo above shows how the YEAR() function can extract the year from the date written in another cell.
 
 #### After selecting all of the Kickstarter data, including the "Years" column, a pivot table was generated. The rows were populated with the "Date Created Conversion". The "Date Created Conversion" box in the "Field Name" dialog box was checked again, after which "Year2" and "Quarters" populated the "Rows" box. We had to remove these by dragging them out of the row box and into the sheet. This removes them from the pivot table. Now the pivot table will show months in the first column on the left. The columns were populated with "Outcomes". The values were populated with the "Outcomes" which are then displayed as "Count of Outcomes". The pivot table columns were filtered and sorted to display "successful, failed, canceled" outcomes only and in that order. Theater was selected within the "Parent Category" filter located above the pivot table.
 
