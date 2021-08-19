@@ -95,7 +95,7 @@
 <img width="1128" alt="Inserting a Line Chart" src="https://user-images.githubusercontent.com/88804543/129995323-d518d54f-c7a4-4e13-9e5c-dc7adfd9faa0.png">
 <img width="898" alt="Selecting Data" src="https://user-images.githubusercontent.com/88804543/129995354-ef367659-56fd-4865-b597-a9cbea60f164.png">
 
-#### The graph that is automatically generated has too much information and we need to remove the excess.This can be done by selecting the chart, then choosing "Select Data" from the "Chart Design" ribbon at the top. Under 'Legend entries', we can remove the top 4 items, by pressing the minus sign in the bottom left corner below the box. This will leave us with the information we DO want:
+#### The graph that is automatically generated has too much information and we need to remove the excess. This can be done by selecting the chart, then choosing "Select Data" from the "Chart Design" ribbon at the top. Under 'Legend entries', we can remove the top 4 items, by pressing the minus sign in the bottom left corner below the box. This will leave us with the information we DO want:
 #### *"Percentage Successful"
 #### *"Percentage Failed"
 #### *"Percentage Canceled"
