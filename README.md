@@ -77,14 +77,14 @@
 
 #### This formula was then dragged down to fill all of the rows below it within Column E.
 
-#### To calculate the values in the next column, "Percentage Successful", we need to take the "Number Successful" (column B) and divide it by the "Total Projects" (column E). You can multiply this value by 100% to put it in percent form, or you can designate the format of the cell as "Percentage", as I did in this example. When changing the cell to "Percentage" format, Excel automatically moves the decimal 2 places to the right of the current number in the cell, which is equivalent to multiplying the value by 100%.
+#### To calculate the values in the next column, "Percentage Successful", we needed to take the "Number Successful" (column B) and divide it by the "Total Projects" (column E). You can multiply this value by 100% to put it in percent form, or you can designate the format of the cell as "Percentage", as I did in this example. When changing the cell to "Percentage" format, Excel automatically moves the decimal 2 places to the right of the current number in the cell, which is equivalent to multiplying the value by 100%. Here is what the box format looks like when "Percentage" is designated:
 
 <img width="169" alt="Excel Percentage Format" src="https://user-images.githubusercontent.com/88804543/129994995-d35d5bb3-fcb3-4e96-8eea-4397eec9618c.png">
 
-#### The formula to calculate the "Percentage Successful" looks like this:
+#### The formula to calculate the "Percentage Successful" looked like this:
 <img width="660" alt="Excel Percentage Successful Formula" src="https://user-images.githubusercontent.com/88804543/129995103-5d8ff5ed-626d-4caa-b3a7-a8d8c60685c4.png">
 
-#### Then you can drag the formula down to populate the rows below it within column F. The same type of calculation is repeated for the "Percentage Failed" and "Percentage Canceled" columns.
+#### Then you can drag the formula down to populate the rows below it within column F. The same type of calculation is repeated for the "Percentage Failed" and "Percentage Canceled" columns. Please see the following:
 <img width="913" alt="Excel Percentage Failed Formula" src="https://user-images.githubusercontent.com/88804543/129995196-7704ff53-88b1-40f0-a8fa-cd639cb8e017.png">
 <img width="917" alt="Excel Percentage Canceled Formula" src="https://user-images.githubusercontent.com/88804543/129995204-d1f97518-d48f-4df4-a692-ea8dca2bb8d0.png">
 
