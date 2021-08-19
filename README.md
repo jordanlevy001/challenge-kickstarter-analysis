@@ -88,14 +88,14 @@
 <img width="913" alt="Excel Percentage Failed Formula" src="https://user-images.githubusercontent.com/88804543/129995196-7704ff53-88b1-40f0-a8fa-cd639cb8e017.png">
 <img width="917" alt="Excel Percentage Canceled Formula" src="https://user-images.githubusercontent.com/88804543/129995204-d1f97518-d48f-4df4-a692-ea8dca2bb8d0.png">
 
-#### It is important to emphasize that all of the cells from F2 to H13 above, are designated as percentages, which is why the formulas do not include a multiplication by 100.
+#### It is important to emphasize that all of the cells from F2 to H13 above, are designated as percentages, which is why the formulas do not include a multiplication by 100 component.
 <img width="169" alt="Excel Percentage Format" src="https://user-images.githubusercontent.com/88804543/129995276-368ce27c-2b29-44ba-ae8d-55b786c08c28.png">
 
 #### To generate the line chart from this data, I highlighted all cells, then inserted a line chart.
 <img width="1128" alt="Inserting a Line Chart" src="https://user-images.githubusercontent.com/88804543/129995323-d518d54f-c7a4-4e13-9e5c-dc7adfd9faa0.png">
 <img width="898" alt="Selecting Data" src="https://user-images.githubusercontent.com/88804543/129995354-ef367659-56fd-4865-b597-a9cbea60f164.png">
 
-#### The graph that is automatically generated has too much information and we need to remove the excess.This can be donee by selecting the chart, then choosing "Select Data" from the "Chart Design" ribbon at the top. Under 'Legend entries', we can remove the top 4 items, by pressing the minus sign in the bottom left corner below the box. This will leave us with the information we DO want:
+#### The graph that is automatically generated has too much information and we need to remove the excess.This can be done by selecting the chart, then choosing "Select Data" from the "Chart Design" ribbon at the top. Under 'Legend entries', we can remove the top 4 items, by pressing the minus sign in the bottom left corner below the box. This will leave us with the information we DO want:
 #### *"Percentage Successful"
 #### *"Percentage Failed"
 #### *"Percentage Canceled"
