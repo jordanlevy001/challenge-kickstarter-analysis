@@ -4,13 +4,13 @@
 
 ### Purpose
 
-#### The purpose of this analysis is to assist Louise in understanding and visualizing trends in the provided fundraising campaign data. Louise would like to know if and how the launch date and funding goal of campaigns affected the campaign outcome. Louise had previously launched a fundraising campaign for her play Fever, which came close to its goal in a short period of time.
+#### The purpose of this analysis is to assist Louise in understanding and visualizing trends in the provided fundraising campaign data. Louise would like to know if and how the launch date and funding goal of campaigns affected the campaign outcome. Louise had previously launched a fundraising campaign for her play *Fever*, which came close to its goal in a short period of time.
 
 ## Analysis and Challenges
 
 ### Analysis of Outcomes Based on Launch Date
 
-#### To effectively visualize and determine the campaign outcomes based on launch date, a pivot table was generated from the Kickstarter data in Excel. But since we are examining launch dates it is important to be able to filter the pivot table by both year and parent category. The parent category of focus in this case is theater. So before generating the pivot table, a "Years" column was created in the Kickstarter data using the function YEAR(), to extract the year from each of teh launch dates which were written in short date form.
+#### To effectively visualize and determine the campaign outcomes based on launch date, a pivot table was generated from the Kickstarter data in Excel. But since we are analyzing launch dates it is important to be able to filter the pivot table by both year and parent category. The parent category of focus in this case is theater. And we need a column with just the year of the launch date in the Kickstarter worksheet. So before generating the pivot table, a "Years" column was created in the Kickstarter data using the function YEAR(), to extract the year from each of the launch dates which were written in short date form.
 
 <img width="496" alt="Excel Year Function" src="https://user-images.githubusercontent.com/88804543/129990659-8b36739a-0d55-4b43-b56d-6890f2ace3ba.png">
 
