@@ -15,18 +15,20 @@
 <img width="496" alt="Excel Year Function" src="https://user-images.githubusercontent.com/88804543/129990659-8b36739a-0d55-4b43-b56d-6890f2ace3ba.png">
 #### The example photo above shows how the YEAR() function can pull the year from another cell.
 
-#### After selecting all of the Kickstarter data, including the "Years" column, a pivot table was generated. The rows were populated with the "Date Created Conversion". The columns were populated with "Outcomes". The values were populated with the "Outcomes" which are then displayed as "Count of Outcomes". The pivot table columns were filtered and sorted to display "successful, failed, canceled" outcomes only and in that order. Theater was selected within the "Parent Category" filter.
+#### After selecting all of the Kickstarter data, including the "Years" column, a pivot table was generated. The rows were populated with the "Date Created Conversion". The "Date Created Conversion" box was in the "Field Name" dialog box was checked and then "Year2" and "Quarters" populated the rows box. We had to remove these by dragging them out of the row box and into the sheet. This removes them from the pivot table. Now the pivot table will show months in the first column on the left. The columns were populated with "Outcomes". The values were populated with the "Outcomes" which are then displayed as "Count of Outcomes". The pivot table columns were filtered and sorted to display "successful, failed, canceled" outcomes only and in that order. Theater was selected within the "Parent Category" filter located above the pivot table.
 <img width="328" alt="Table_Theater Outcomes_Launch Date" src="https://user-images.githubusercontent.com/88804543/129990942-66ce223c-36b6-4907-a7a6-bb4177bd9c5b.png">
 #### This is the completed pivot table.
 #### Then a pivot chart was generated from this pivot table. The chart type was adjusted from the default to a line chart. The chart type can be adjusted by selecting the "Change Chart Type" Button that looks like this:
 <img width="72" alt="Change Chart Type Icon" src="https://user-images.githubusercontent.com/88804543/129991055-765a93e6-dd99-429c-99e0-277a2337cc20.png">
 <img width="530" alt="Chart Type to Line" src="https://user-images.githubusercontent.com/88804543/129991065-e93373b9-f130-42e1-9604-51a88cdc7e89.png">
 #### After changing the chart type to a line with markers chart, the final graph looks like this:
+
 ![Theater_Outcomes_vs_Launch](https://user-images.githubusercontent.com/88804543/129991131-a1abcb0a-2401-4208-ad50-ee78cc8f4b39.png)
+
 
 ### Analysis of Outcomes Based on Goals
 
-#### To calculate and visualize the percentage of successful, failed, canceled plays based on the funding goal amount, a new worksheet needed to be generated. In the new worksheet, the following columns were created
+#### To calculate and visualize the percentage of: successful, failed, canceled plays based on the funding goal amount, a new worksheet needed to be generated. In the new worksheet, the following columns were created
 #### *Goal
 #### *Number Successful
 #### *Number Failed
@@ -38,27 +40,29 @@
 
 <img width="1104" alt="Columns and Rows for Outcomes Based on Goals" src="https://user-images.githubusercontent.com/88804543/129991486-39e96f19-afdc-41f9-9a06-83c26835aef5.png">
 
-#### For our analysis, it will be helpful to group the goal amounts into dollar-amount ranges. In the "Goal" column on the left, the dollar-amount ranges were designated as follows:
+#### For our analysis, it was helpful to group the goal amounts into dollar-amount ranges. In the "Goal" column on the left, the dollar-amount ranges were designated as follows:
 <img width="117" alt="Goal Amounts Grouped" src="https://user-images.githubusercontent.com/88804543/129991544-e55496f0-8ad4-48e2-8838-f72b910ddd1f.png">
 
-#### To populate the "Number Successful", "Number Failed", "Number Canceled" columns, we used the COUNTIFS() function. By using the COUNTIFS() function, we can filter the data to count cells which match our designated criteria. For this table, we will use the COUNTIFS() function to count cells with the following criteria:
+#### To populate the "Number Successful", "Number Failed", "Number Canceled" columns, we used the COUNTIFS() function. By using the COUNTIFS() function, we were able to filter the data to count cells which matched our designated criteria. For this table, we used the COUNTIFS() function to count cells with the following criteria:
 #### 1. Subcategory: plays
-#### 2. Outcome: successful/failed/canceled (we will choose 1)
+#### 2. Outcome: successful/failed/canceled (designate 1)
 #### 3. Goal: corresponding to the dollar-amount range on the left in column A
 
-#### This is what the formula looked like for the first row of the table in the "Number Successful" column, where the goal amount was less than 1000
+#### This is what the formula looked like for the first row of the table in the "Number Successful" column, where the goal amount was less than 1000:
 <img width="566" alt="Excel COUNTIFS Function1" src="https://user-images.githubusercontent.com/88804543/129991987-b37c0db7-bbbd-4fc0-ad48-71fd60e08bb0.png">
 
-#### For all 3 columns "Number Successful", "Number Failed", "Number Canceled", the COUNTIFS() formula will need to filter the Kickstarter sheet in column R($R:$R), which is the "Subcategory" for "plays". In the Kickstarter sheet, column D is where the goal amount is located, so we select the entire column ($D:$D). And we want to count cells with goal amounts less than 1000("<1000"). The dollar signs ($) lock the cells in the formula so they do not change if you copy and paste the formula or drag it into another cell. In the Kickstarter sheet, column F is the "Outcome". We want to filter for only "successful" outcomes in all of column F ($F:$F); so the whole column is selected and our criteria is "successful".
-#### Withing the "Number Successful" column, the only difference in the formulas between rows is the goal amounts (column D in the Kickstarter worksheet). The next goal range is 1000 to 4999, so the second row in the "Number Successful" column will contain the formula:
+#### For all 3 columns "Number Successful", "Number Failed", "Number Canceled", the COUNTIFS() formula needed to filter the Kickstarter sheet in column R($R:$R), which is the "Subcategory" for "plays". In the Kickstarter sheet, column D is where the goal amount is located, so we selected the entire column ($D:$D). And we want to count cells with goal amounts less than 1000("<1000"). The dollar signs ($) lock the cells in the formula so they do not change if you copy and paste the formula or drag it into another cell. In the Kickstarter sheet, column F is the "Outcome". We want to filter for only "successful" outcomes in all of column F ($F:$F); so the whole column is selected and our criteria is "successful".
+#### Within the "Number Successful" column, the only difference in the formulas between rows is the goal amounts (column D in the Kickstarter worksheet). The next goal range is 1000 to 4999, so the second row in the "Number Successful" column will contain the formula:
 <img width="734" alt="Excel COUNTIFS Function2" src="https://user-images.githubusercontent.com/88804543/129994136-3cb7b76b-c9b6-4956-b50c-05e6d3a62e9d.png">
 #### You can see that the cells to be counted in the "Goals" column D in the Kickstarter worksheet are greater than or equal to 1000 ("<=1000") and less than or equal to 4999 ("<=4999"), which is denoted in the formula.
+
 #### After populating all of the rows within the "Number Successful" column, we move over to the "Number Failed" column. The difference in the formula between cells is the outcome column (F) in the Kickstarter worksheet. We edit the formula to count cells in column F on the Kickstarter worksheet that contain the outcome "failed". See the example:
 <img width="708" alt="Excel COUNTIFS Function3" src="https://user-images.githubusercontent.com/88804543/129994253-36fbc799-d677-42b2-a601-49fb0fcd4570.png">
+
 #### For the same row in the "Number Canceled" column, the formula would be adjusted to filter for the outcome: canceled. The formula looks like this:
 <img width="727" alt="Excel COUNTIFS Function4" src="https://user-images.githubusercontent.com/88804543/129994505-468831f5-54e2-4c9b-8a45-045497cb00b0.png">
 
-#### After the "Number of: Successful, Failed, Canceled" columns are populated, we can write a formula to calculate the "Total Projects" column. We do this by summing the corresponding "Number Successful" with the "Number Failed" and the "Number Canceled". We use the function SUM(). In this example, we are summing cells B3 to D3. The formula in action with the involved cells highlighted looks like this:
+#### After the "Number of: Successful, Failed, Canceled" columns were populated, we wrote a formula to calculate the "Total Projects" column. We did this by summing the corresponding "Number Successful" with the "Number Failed" and the "Number Canceled". We used the function SUM(). In this example, we are summing cells B3 to D3. The formula in action with the involved cells highlighted looks like this:
 <img width="527" alt="Excel Total Projects Example" src="https://user-images.githubusercontent.com/88804543/129994677-5a439f17-92d2-4c8a-96e7-3b0ac8c39e56.png">
 #### This formula was then dragged down to fill all of the rows below it within Column E.
 #### To calculate the values in the next column, "Percentage Successful", we need to take the "Number Successful" (column B) and divide it by the "Total Projects" (column E). You can multiply this value by 100% to put it in percent form, or you can designate the format of the cell as "Percentage", as I did in this example. When changing the cell to "Percentage" format, Excel automatically moves the decimal 2 places to the right of the current number in the cell, which is equivalent to multiplying the value by 100%.
@@ -82,7 +86,7 @@ To generate the line chart from this data, I highlighted all cells, then inserte
 <img width="892" alt="Table_Outcomes Based on Goals" src="https://user-images.githubusercontent.com/88804543/129995606-420f0128-ceef-4993-a3b9-6ae027874377.png">
 
 ### Challenges
-#### The first challenge occurred with writing the formulas for the table in the analysis of outcomes based on goals.
+#### No challenges occurred while completing deliverable 1 and 2, the outcomes based on launch date and the outcomes based on goals charts. The first challenge occurred when writing the analysis report in the README file in GitHub, I had difficulty with the headers. Some headers would display normally but then others would not. This trouble occurred specifically for H4 headers, meaning the ones requiring 4 hashes. Some of the lines with 4 hashes would display normally and others would not. I went through the entire README file and deleted the H4 headers and re-entered them. I also tried refreshing the page.
 
 ## Results
 ### The first conclusion we can draw from the "Outcomes Based on Launch Date" line graph is there are more campaigns launched overall in May, June, July. The second conclusion we can draw is campaigns launched in May had a higher incidence of success. Louise should launch future campaigns in May.
