@@ -29,14 +29,14 @@
 ### Analysis of Outcomes Based on Goals
 
 #### To calculate and visualize the percentage of: successful, failed, canceled plays based on the funding goal amount, a new worksheet needed to be generated. In the new worksheet, the following columns were created
-#### *Goal
-#### *Number Successful
-#### *Number Failed
-#### *Number Canceled
-#### *Total Projects
-#### *Percentage Successful
-#### *Percentage Failed
-#### *Percentage Canceled
+#### - Goal
+#### - Number Successful
+#### - Number Failed
+#### - Number Canceled
+#### - Total Projects
+#### - Percentage Successful
+#### - Percentage Failed
+#### - Percentage Canceled
 
 <img width="1104" alt="Columns and Rows for Outcomes Based on Goals" src="https://user-images.githubusercontent.com/88804543/129991486-39e96f19-afdc-41f9-9a06-83c26835aef5.png">
 
@@ -51,7 +51,8 @@
 #### This is what the formula looked like for the first row of the table in the "Number Successful" column, where the goal amount was less than 1000:
 <img width="566" alt="Excel COUNTIFS Function1" src="https://user-images.githubusercontent.com/88804543/129991987-b37c0db7-bbbd-4fc0-ad48-71fd60e08bb0.png">
 
-#### For all 3 columns "Number Successful", "Number Failed", "Number Canceled", the COUNTIFS() formula needed to filter the Kickstarter sheet in column R($R:$R), which is the "Subcategory" for "plays". In the Kickstarter sheet, column D is where the goal amount is located, so we selected the entire column ($D:$D). And we want to count cells with goal amounts less than 1000("<1000"). The dollar signs ($) lock the cells in the formula so they do not change if you copy and paste the formula or drag it into another cell. In the Kickstarter sheet, column F is the "Outcome". We want to filter for only "successful" outcomes in all of column F ($F:$F); so the whole column is selected and our criteria is "successful".
+#### For all 3 columns "Number Successful", "Number Failed", "Number Canceled", the COUNTIFS() formula is needed to filter the Kickstarter sheet in column R($R:$R), which is the "Subcategory" for "plays". In the Kickstarter sheet, column D is where the goal amount is located, so we selected the entire column ($D:$D). And we want to count cells with goal amounts less than 1000("<1000"). The dollar signs ($) lock the cells in the formula so they do not change if you copy and paste the formula or drag it into another cell. In the Kickstarter sheet, column F is the "Outcome". We want to filter for only "successful" outcomes in all of column F ($F:$F); so the whole column is selected and our criteria is "successful".
+
 #### Within the "Number Successful" column, the only difference in the formulas between rows is the goal amounts (column D in the Kickstarter worksheet). The next goal range is 1000 to 4999, so the second row in the "Number Successful" column will contain the formula:
 <img width="734" alt="Excel COUNTIFS Function2" src="https://user-images.githubusercontent.com/88804543/129994136-3cb7b76b-c9b6-4956-b50c-05e6d3a62e9d.png">
 #### You can see that the cells to be counted in the "Goals" column D in the Kickstarter worksheet are greater than or equal to 1000 ("<=1000") and less than or equal to 4999 ("<=4999"), which is denoted in the formula.
@@ -65,9 +66,10 @@
 #### After the "Number of: Successful, Failed, Canceled" columns were populated, we wrote a formula to calculate the "Total Projects" column. We did this by summing the corresponding "Number Successful" with the "Number Failed" and the "Number Canceled". We used the function SUM(). In this example, we are summing cells B3 to D3. The formula in action with the involved cells highlighted looks like this:
 <img width="527" alt="Excel Total Projects Example" src="https://user-images.githubusercontent.com/88804543/129994677-5a439f17-92d2-4c8a-96e7-3b0ac8c39e56.png">
 #### This formula was then dragged down to fill all of the rows below it within Column E.
+
 #### To calculate the values in the next column, "Percentage Successful", we need to take the "Number Successful" (column B) and divide it by the "Total Projects" (column E). You can multiply this value by 100% to put it in percent form, or you can designate the format of the cell as "Percentage", as I did in this example. When changing the cell to "Percentage" format, Excel automatically moves the decimal 2 places to the right of the current number in the cell, which is equivalent to multiplying the value by 100%.
 <img width="169" alt="Excel Percentage Format" src="https://user-images.githubusercontent.com/88804543/129994995-d35d5bb3-fcb3-4e96-8eea-4397eec9618c.png">
-#### The formula to calculate the "Percentage Successful" looks like the following:
+#### The formula to calculate the "Percentage Successful" looks like this:
 <img width="660" alt="Excel Percentage Successful Formula" src="https://user-images.githubusercontent.com/88804543/129995103-5d8ff5ed-626d-4caa-b3a7-a8d8c60685c4.png">
 #### Then you can drag the formula down to populate the rows below it within column F. The same type of calculation is repeated for the "Percentage Failed" and "Percentage Canceled" columns.
 <img width="913" alt="Excel Percentage Failed Formula" src="https://user-images.githubusercontent.com/88804543/129995196-7704ff53-88b1-40f0-a8fa-cd639cb8e017.png">
@@ -75,25 +77,26 @@
 #### It is important to emphasize that all of the cells from F2 to H13 above, are designated as percentages, which is why the formulas do not include a multiplication by 100.
 <img width="169" alt="Excel Percentage Format" src="https://user-images.githubusercontent.com/88804543/129995276-368ce27c-2b29-44ba-ae8d-55b786c08c28.png">
 
-To generate the line chart from this data, I highlighted all cells, then inserted a line chart.
+#### To generate the line chart from this data, I highlighted all cells, then inserted a line chart.
 <img width="1128" alt="Inserting a Line Chart" src="https://user-images.githubusercontent.com/88804543/129995323-d518d54f-c7a4-4e13-9e5c-dc7adfd9faa0.png">
 <img width="898" alt="Selecting Data" src="https://user-images.githubusercontent.com/88804543/129995354-ef367659-56fd-4865-b597-a9cbea60f164.png">
 #### The graph that is automatically generated has too much information and we need to remove the excess.This can be donee by selecting the chart, then choosing "Select Data" from the "Chart Design" ribbon at the top. Under 'Legend entries', we can remove the top 4 items, by pressing the minus sign in the bottom left corner below the box. This will leave us with the information we DO want:
-#### *"Percentage Successful"
-#### *"Percentage Failed"
-#### *"Percentage Canceled"
+#### * "Percentage Successful"
+#### * "Percentage Failed"
+#### * "Percentage Canceled"
 #### In the box that says "Chart Title", the text was edited to "Outcomes Based on Goals". The finalized chart looks like this:
 <img width="892" alt="Table_Outcomes Based on Goals" src="https://user-images.githubusercontent.com/88804543/129995606-420f0128-ceef-4993-a3b9-6ae027874377.png">
 
 ### Challenges
-#### No challenges occurred while completing deliverable 1 and 2, the outcomes based on launch date and the outcomes based on goals charts. The first challenge occurred when writing the analysis report in the README file in GitHub, I had difficulty with the headers. Some headers would display normally but then others would not. This trouble occurred specifically for H4 headers, meaning the ones requiring 4 hashes. Some of the lines with 4 hashes would display normally and others would not. I went through the entire README file and deleted the H4 headers and re-entered them. I also tried refreshing the page.
+#### No challenges occurred while completing deliverable 1 and 2, the outcomes based on launch date and the outcomes based on goals charts. The first challenge occurred when writing the analysis report in the README.md file in GitHub, I had difficulty with the headers. Some headers would display normally but then others would not. This trouble occurred specifically for H4 headers, meaning the ones requiring 4 hashes. Some of the lines with 4 hashes would display normally and others would not. I looked up Markdown syntax to ensure I was using the hashes correctly. I also googled if anyone also had this issue. I also went through the entire README.md file and deleted the H4 headers and re-entered them. I also tried refreshing the page.
 
 ## Results
+
 ### The first conclusion we can draw from the "Outcomes Based on Launch Date" line graph is there are more campaigns launched overall in May, June, July. The second conclusion we can draw is campaigns launched in May had a higher incidence of success. Louise should launch future campaigns in May.
 
 ### From the "Outcomes Based on Goals" chart, we can conclude that campaigns with lower goals are more successful. Campaigns with goals less than $5000 had the highest incidence of success.
 
 ### There are some limitations to this dataset. This dataset does not tell us background or demographic information about the backers, the people who are donating the money. It would be helpful to know demographic information about the backers because it would help Louise understand who her target demographic should be for her play's fundraising campaign.
 
-### In addition to the graphs shown above, another helpful table we could create would show how close the failed campaigns for the subcategory plays came to reaching their corresponding goal. Examining the failed campaigns for the subcategory of plays, we could calculate what percent fo the goal money was pledged. Then we could visualize the percentage funded of the failed campaigns with a histogram.
+### In addition to the graphs shown above, another helpful table we could create would show how close the failed campaigns for the subcategory plays came to reaching their corresponding goal. Examining the failed campaigns for the subcategory of plays, we could calculate what percent of the goal money was pledged. Then we could visualize the percentage funded of the failed campaigns with a histogram.
 ### We could also create a table to analyze how the length of time of the campaign affected the outcome. We would visualize this data with a stacked bar graph comparing the duration of the campaign to the campaign outcome.
