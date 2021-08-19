@@ -105,13 +105,10 @@
 ### Challenges
 #### No challenges occurred while completing deliverable 1 and 2, the outcomes based on launch date and the outcomes based on goals charts. The first challenge occurred when writing the analysis report in the README.md file in GitHub, I had difficulty with the headers. Some headers would display normally but then others would not. This trouble occurred specifically for H4 headers, meaning the ones requiring 4 hashes. Some of the lines with 4 hashes would display normally and others would not. I looked up Markdown syntax to ensure I was using the hashes correctly. I also googled if anyone also had this same issue. I tried to understand why some H4 headers were formatted correctly while others were not. This lead me to the discovery of adding spaces between lines of text and images. So I added space between lines with H4 headers that came after an image. This solved the issue. So I went through the README.md file and added space where it was needed between images and H4 headers.
 
+
 ## Results
 
-![Theater_Outcomes_vs_Launch](https://user-images.githubusercontent.com/88804543/130140643-8a980a74-e38e-472c-a84b-b98089c27af0.png)
-
 ### The first conclusion we can draw from the "Outcomes Based on Launch Date" line graph is there are more campaigns launched overall in May, June, July. The second conclusion we can draw is campaigns launched in May had a higher incidence of success. Louise should launch future campaigns in May.
-
-![Outcomes_vs_Goals](https://user-images.githubusercontent.com/88804543/130140672-c0e9f401-9056-4b09-9294-3c5050c48cec.png)
 
 ### From the "Outcomes Based on Goals" chart, we can conclude that campaigns with lower goals are more successful. Campaigns with goals less than $5000 had the highest incidence of success.
 
