@@ -16,12 +16,12 @@
 
 #### The example photo above shows how the YEAR() function can pull the year from another cell.
 
-#### After selecting all of the Kickstarter data, including the "Years" column, a pivot table was generated. The rows were populated with the "Date Created Conversion". The "Date Created Conversion" box was in the "Field Name" dialog box was checked and then "Year2" and "Quarters" populated the rows box. We had to remove these by dragging them out of the row box and into the sheet. This removes them from the pivot table. Now the pivot table will show months in the first column on the left. The columns were populated with "Outcomes". The values were populated with the "Outcomes" which are then displayed as "Count of Outcomes". The pivot table columns were filtered and sorted to display "successful, failed, canceled" outcomes only and in that order. Theater was selected within the "Parent Category" filter located above the pivot table.
+#### After selecting all of the Kickstarter data, including the "Years" column, a pivot table was generated. The rows were populated with the "Date Created Conversion". The "Date Created Conversion" box in the "Field Name" dialog box was checked again, after which "Year2" and "Quarters" populated the "Rows" box. We had to remove these by dragging them out of the row box and into the sheet. This removes them from the pivot table. Now the pivot table will show months in the first column on the left. The columns were populated with "Outcomes". The values were populated with the "Outcomes" which are then displayed as "Count of Outcomes". The pivot table columns were filtered and sorted to display "successful, failed, canceled" outcomes only and in that order. Theater was selected within the "Parent Category" filter located above the pivot table.
 
 <img width="328" alt="Table_Theater Outcomes_Launch Date" src="https://user-images.githubusercontent.com/88804543/129990942-66ce223c-36b6-4907-a7a6-bb4177bd9c5b.png">
 
 #### This is the completed pivot table.
-#### Then a pivot chart was generated from this pivot table. The chart type was adjusted from the default to a line chart. The chart type can be adjusted by selecting the "Change Chart Type" Button that looks like this:
+#### Then a pivot chart was generated from this pivot table. The chart type was adjusted from the default to a line chart. The chart type can be adjusted by selecting the "Change Chart Type" button. Then you can choose from the chart options provided, where you can select a line with markers chart.
 
 <img width="72" alt="Change Chart Type Icon" src="https://user-images.githubusercontent.com/88804543/129991055-765a93e6-dd99-429c-99e0-277a2337cc20.png">
 <img width="530" alt="Chart Type to Line" src="https://user-images.githubusercontent.com/88804543/129991065-e93373b9-f130-42e1-9604-51a88cdc7e89.png">
