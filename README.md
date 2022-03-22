@@ -1,4 +1,4 @@
-# Challenge Kickstarter Analysis with Excel
+# Kickstarter Analysis with Excel
 
 ## Overview of Project
 
